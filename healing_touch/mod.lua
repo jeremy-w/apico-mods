@@ -55,7 +55,7 @@ function click()
     if tool.current_health < tool.total_health then
       --tool.current_health = tool.total_health -- <--this doesn't persist!
       api_sp(tool.id, "current_health", tool.total_health)
-      api_create_log("healed item", tool)
+      -- api_create_log("healed item", tool)
     end
   end
 end
