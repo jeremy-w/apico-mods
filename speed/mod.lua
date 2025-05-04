@@ -53,11 +53,6 @@ function data(ev, data)
   end
 end
 
-function ready()
-  -- total_health vs current_health
-  --player.props.speed = 120
-end
-
 function move(pos, speed)
   local dir = { x = 0, y = 0 }
   if api_get_key_down("W") == 1 then
